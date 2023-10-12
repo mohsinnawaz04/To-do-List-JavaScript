@@ -35,6 +35,8 @@ var listAdd = () => {
     var spanNode = document.createElement('span')
     listNode.innerText = inputNode.value
     spanNode.innerText = changedDateFormat
+    var delbtn = document.createElement('button')
+    delbtn.textContent = 'Delete'
     divNode.appendChild(listNode)
     divNode.appendChild(spanNode)
 
@@ -46,6 +48,9 @@ var listAdd = () => {
 // Adding User list item inside out list node
     ul.insertBefore(divNode, ul.firstChild)
 
+    delbtn.addEventListener('click', function(){
+        delbtn.parentElement.remove();
+    })
 }
 
 // Implementing Validation Function using onclick event
