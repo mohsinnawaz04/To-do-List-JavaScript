@@ -39,6 +39,7 @@ var listAdd = () => {
     delbtn.textContent = 'Delete'
     divNode.appendChild(listNode)
     divNode.appendChild(spanNode)
+    divNode.appendChild(delbtn)
 
 // Styling div that contains both inputs of user
     divNode.style.textTransform = 'capitalize'
