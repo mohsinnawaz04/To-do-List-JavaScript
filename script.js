@@ -30,6 +30,8 @@ var listAdd = () => {
 
 
     var divNode = document.createElement('div')
+    inputNode.value = ''
+    dateInput.value  = ''
     btn.nextElementSibling.innerText = ""
     var listNode = document.createElement('li')
     var spanNode = document.createElement('span')
